@@ -2,14 +2,11 @@
 
 public class Dollar
 {
-    public int Ammount { get; private set; }
+    public int Ammount { get; init; }
     public Dollar(int ammount)
     {
        Ammount = ammount;
     }
 
-    public void Times(int multiplier)
-    {
-        Ammount *= multiplier;
-    }
+    public Dollar Times(int multiplier) => new(Ammount * multiplier);
 }

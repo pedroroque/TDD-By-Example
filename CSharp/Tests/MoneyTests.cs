@@ -9,8 +9,14 @@ public class MoneyTests
     {
         var five = new Dollar(5);
 
-        five.Times(2);
-        
-        Assert.Equal(10, five.Ammount);
+        Assert.Equal(10, five.Times(2).Ammount);
+    }
+
+    [Fact]
+    public void ShouldBeAbleToMultiplyTwoTimes() {
+        var five = new Dollar(5);
+
+        Assert.Equal(10, five.Times(2).Ammount);
+        Assert.Equal(15, five.Times(3).Ammount);
     }
 }
