@@ -1,6 +1,4 @@
-﻿using Domain;
-
-namespace Tests;
+﻿namespace Tests;
 
 public class MoneyTests
 {
